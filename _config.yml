@@ -101,4 +101,6 @@ theme: aircloud
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  ropo: git@github.com:cacity/cacity.github.io.git
+  branch: master
