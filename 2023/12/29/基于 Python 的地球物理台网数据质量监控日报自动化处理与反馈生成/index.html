@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="PyQt6小软件–基于Python的地球物理台网数据质量监控周报报自动化处理与生成反馈报表 基于Python、PyQt6和Openpyxl开发的地球物理台网数据质量监控周报自动化处理及生成反馈报表的软件，主要服务于需要响应并处理地球物理站网数据质量监控周报的工作需求。每周三，国家地球物理台网中心网站会发布数据质量监控周报，要求各相关单位对存在的质量问题进行及时处理，并反馈处理结果。处理过程中，需要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/12/29/%E5%9F%BA%E4%BA%8E%20Python%20%E7%9A%84%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86%E5%8F%B0%E7%BD%91%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E7%9B%91%E6%8E%A7%E6%97%A5%E6%8A%A5%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E4%B8%8E%E5%8F%8D%E9%A6%88%E7%94%9F%E6%88%90/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="PyQt6小软件–基于Python的地球物理台网数据质量监控周报报自动化处理与生成反馈报表 基于Python、PyQt6和Openpyxl开发的地球物理台网数据质量监控周报自动化处理及生成反馈报表的软件，主要服务于需要响应并处理地球物理站网数据质量监控周报的工作需求。每周三，国家地球物理台网中心网站会发布数据质量监控周报，要求各相关单位对存在的质量问题进行及时处理，并反馈处理结果。处理过程中，需要">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://files.mdnice.com/user/38447/d684fdd5-d672-4890-8908-2556f6aa5654.png">
+<meta property="og:image" content="https://files.mdnice.com/user/38447/a498ac50-8455-451d-8b00-73606c2b5e1b.png">
+<meta property="og:image" content="https://files.mdnice.com/user/38447/64eec23f-21d3-4161-90be-7f3f59ad98d2.png">
+<meta property="og:image" content="https://files.mdnice.com/user/38447/b396ba23-75ba-4305-a311-eecbae39aa14.png">
+<meta property="og:image" content="https://files.mdnice.com/user/38447/235aa979-04b2-45d4-998f-64c3b8b362b9.png">
+<meta property="og:image" content="https://files.mdnice.com/user/38447/4101c946-a41e-4940-a6b4-3c638d35da16.png">
+<meta property="article:published_time" content="2023-12-29T14:01:07.037Z">
+<meta property="article:modified_time" content="2023-06-20T05:43:15.773Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://files.mdnice.com/user/38447/d684fdd5-d672-4890-8908-2556f6aa5654.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-基于 Python 的地球物理台网数据质量监控日报自动化处理与反馈生成" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/29/%E5%9F%BA%E4%BA%8E%20Python%20%E7%9A%84%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86%E5%8F%B0%E7%BD%91%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E7%9B%91%E6%8E%A7%E6%97%A5%E6%8A%A5%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E4%B8%8E%E5%8F%8D%E9%A6%88%E7%94%9F%E6%88%90/" class="article-date">
+  <time class="dt-published" datetime="2023-12-29T14:01:07.037Z" itemprop="datePublished">2023-12-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>PyQt6小软件–基于Python的地球物理台网数据质量监控周报报自动化处理与生成反馈报表</p>
+<p>基于<code>Python</code>、<code>PyQt6</code>和<code>Openpyxl</code>开发的地球物理台网数据质量监控周报自动化处理及生成反馈报表的软件，主要服务于需要响应并处理地球物理站网数据质量监控周报的工作需求。每周三，国家地球物理台网中心网站会发布数据质量监控周报，要求各相关单位对存在的质量问题进行及时处理，并反馈处理结果。处理过程中，需要从全国数据中筛选出黑龙江省相关的反馈，通知所属中心站&#x2F;台站，并制作固定格式的反馈表格进行上报。这款软件有效地简化了这一流程，通过自动化处理数据和生成反馈报表，大幅度提高了工作效率，同时避免了人工操作过程中可能出现的错误。</p>
+<p>最后的成品大概是这样：<br><img src="https://files.mdnice.com/user/38447/d684fdd5-d672-4890-8908-2556f6aa5654.png"></p>
+<p>一、软件功能：</p>
+<p>1.数据加载：通过用户界面，允许用户选择一个或多个<code>Excel</code>文件进行数据处理。对于每个文件，都会读取电子表格数据，然后进行预设的筛选操作。该功能在程序层面通过<code>PyQt</code>的<code>QFileDialog</code>实现文件选择和读取，然后通过<code>pandas</code>库进行数据读取和筛选。</p>
+<p>2.数据处理与筛选：根据预设规则（例如，筛选出第三列前两位为’23’的数据行），在数据加载阶段就进行了数据筛选。此功能通过<code>pandas</code>库实现，利用了<code>pandas</code>强大的数据处理能力。</p>
+<p>3.报告生成：基于筛选出的数据，自动填写和生成监控反馈报告，报告为<code>Excel</code>文件格式。此功能在程序层面通过<code>Openpyxl</code>库实现，<code>Openpyxl</code>库提供了丰富的<code>Excel</code>操作功能，包括但不限于合并单元格、设置字体、设置边框、设置对齐方式等。</p>
+<p>4.数据预览：加载并处理后的数据，可以在用户界面中预览，具备良好的用户交互体验。此功能通过<code>PyQt</code>的<code>QTableWidget</code>实现，每行数据都会被填充到表格的相应位置，同时通过<code>resizeColumnsToContents</code>和<code>resizeRowsToContents</code>方法调整列宽和行高，使得数据展示更美观。</p>
+<p>5.文件自动打开：生成的反馈报告文件会被自动打开，方便用户查看和进一步编辑。此功能通过os库的startfile方法实现。</p>
+<p>二、程序实现：</p>
+<p>1.<code>Python</code>、<code>PyQt6</code>及<code>Openpyxl</code>的应用</p>
+<p>该软件以<code>Python</code>为基础，通过<code>PyQt6</code>库构建用户界面，利用<code>pandas</code>进行数据处理，并使用<code>Openpyxl</code>进行<code>Excel</code>操作。Python是一种解释型、交互式、面向对象的编程语言，语法简洁明了，易于学习，而且具有强大的标准库和丰富的第三方库。</p>
+<p><code>PyQt6</code>是一款开发<code>Python</code>图形用户界面应用程序的工具包。它将<code>Qt</code>库（一种<code>C++GUI</code>应用开发框架）的丰富特性和Python的易用性结合在一起。使用<code>PyQt6</code>，我们可以快速创建出具有丰富功能、易于操作、美观的用户界面，大大提高了开发效率。</p>
+<p><code>pandas</code>是一个为<code>Python</code>编程语言提供的强大数据结构和数据分析工具。它为我们提供了数据处理、清洗、分析等众多功能，特别适合于处理结构化数据，如表格数据等。</p>
+<p><code>Openpyxl</code>是<code>Python</code>中操作<code>Excel2007</code>及以上版本的库。通过它，我们可以轻松地读取、写入和修改<code>Excel</code>文件，也可以应用各种样式，如字体、背景色等，非常适合于自动生成报告。</p>
+<p>2.代码结构设计</p>
+<p>代码结构设计遵循”单一职责原则”，即每一个功能模块、类或方法只负责完成一项任务。比如我们的<code>load_data</code>方法专门负责加载数据，<code>generate_report</code>方法专门负责生成报告。这种设计使得我们的代码具有高内聚、低耦合的特性，非常易于阅读和维护。</p>
+<p>同时，这种设计还能帮助我们更好地进行单元测试。每个模块、类或方法只做一件事，测试就会更容易、更有效，大大提高了代码质量。</p>
+<p>3.错误处理和提示</p>
+<p>在数据处理过程中，所有可能会产生错误的操作都有相应的错误处理和提示。例如，读取文件时，如果文件路径错误或者文件格式不正确，程序会捕获到这个错误，并弹出友好的错误提示。</p>
+<p>我们利用Python的异常处理机制，对可能出错的代码进行了包装。如果出现错误，会抛出异常，并在外层进行捕获和处理。</p>
+<p>同时，我们还设计了友好的用户提示信息。比如，当用户尝试打开一个不存在的文件时，会弹出”文件不存在”的错误提示，当用户尝试打开一个格式不正确的文件时，会弹出”文件格式不正确”的错误提示。这样的设计，不仅使得我们的程序更加健壮，也提高了用户体验。</p>
+<p>4.利用<code>PyQt6</code>的信号和槽机制</p>
+<p>在设计用户交互时，我们充分利用了PyQt6的信号和槽机制。信号和槽是<code>PyQt6</code>中一种重要的机制，它实现了对象之间的通信。信号可以在某个事件发生时被发出，而槽可以被任何对象的信号连接，从而在信号发出时执行。</p>
+<p>我们的每个功能按钮，都连接了一个槽函数，当用户点击按钮时，对应的槽函数就会被执行，完成相应的功能。比如，我们的”加载数据”按钮连接了<code>load_data</code>方法，”生成报告”按钮连接了<code>generate_report</code>方法。</p>
+<p>此外，我们还利用信号和槽实现了数据的实时预览。当数据加载完成或筛选后，会发出一个信号，这个信号连接了一个槽函数，用于在界面上显示数据。这样，用户在操作过程中，可以实时看到数据的变化。</p>
+<p>5.数据加载和报告生成的异步处理</p>
+<p>为了避免在数据加载和报告生成等耗时操作执行期间，界面变得无响应，我们采用了异步处理的方法。</p>
+<p>具体来说，我们使用了QThread类，创建了一个新的线程来执行耗时操作。当用户点击”加载数据”或”生成报告”按钮时，新线程就会开始运行，而主线程（也就是用户界面）则可以继续响应用户的操作。</p>
+<p>在新线程运行的过程中，我们还设置了一个进度条，用于显示操作的完成进度。这个进度条通过信号和槽与新线程的操作同步，当新线程完成一部分操作时，进度条就会更新。这样，用户就可以清楚地了解操作的执行情况。</p>
+<p>6.利用<code>Openpyxl</code>操作<code>Excel</code></p>
+<p><code>Openpyxl</code>库为我们提供了丰富的<code>Excel</code>操作<code>API</code>，包括读取、修改和写入等。我们使用这些<code>API</code>，可以方便地在<code>Python</code>程序中操作<code>Excel</code>文件。</p>
+<p>当我们需要生成报告时，首先会创建一个新的<code>Excel</code>文件，然后根据数据内容，使用<code>Openpyxl</code>的<code>API</code>往文件中写入数据。在写入数据的同时，我们还可以应用各种样式，如设置字体、背景色等，使得生成的报告更加美观。</p>
+<p>在整个操作过程中，我们只需要调用<code>Openpyxl</code>的<code>API</code>，而无需关心具体的<code>Excel</code>操作细节，大大简化了我们的工作。</p>
+<p>三.操作步骤</p>
+<p>1.运行软件<br>在Anaconda Powershell Prompt环境下，运行python main.py，结果如图。</p>
+<p><img src="https://files.mdnice.com/user/38447/a498ac50-8455-451d-8b00-73606c2b5e1b.png"></p>
+<p>2.下载邮件、解压缩文件<br>点击“下载邮件、解压缩文件”按钮(QPushButton)，调用get_mail()函数，通过imap_tools库，直接访问126邮箱的imap服务器，收取邮件及附件，把zip格式的附件解压缩在程序运行目录。</p>
+<p><img src="https://files.mdnice.com/user/38447/64eec23f-21d3-4161-90be-7f3f59ad98d2.png"></p>
+<p>3.选择文件<br>选择最新一期反馈文件（选择文件），加载文件，经过筛选，把黑龙江省需要反馈的文件都集中展示在这个列表中。根据选择文件的信息，自动更新监控数据的起始日期。</p>
+<p><img src="https://files.mdnice.com/user/38447/b396ba23-75ba-4305-a311-eecbae39aa14.png"></p>
+<p><img src="https://files.mdnice.com/user/38447/235aa979-04b2-45d4-998f-64c3b8b362b9.png"></p>
+<p>4.生成报告<br>选择当天的值班人，所有值班人信息已填加到值班人列表里，流体、形变、电磁三个选项根据所出现需要反馈的测项进行选择，这个勾选结果，直接反应在生成报表的表头标题里。点“生成报告”，会根据反馈的台信息生成一个反馈报表，并直接用本地默认的excel软件自动打开预览，如果有需要修改的内容直接进行修改保存。</p>
+<p><img src="https://files.mdnice.com/user/38447/4101c946-a41e-4940-a6b4-3c638d35da16.png"></p>
+<p>经过以上操作，完成反馈报表制作，只需按要求发送出去，就可以了。</p>
+<p>四.代码方面</p>
+<p>上面两行布局，<code>QPushButton</code>+<code>QLineEdit</code>+<code>QDateEdit</code>+<code>QFileDialog</code>+<code>QCheckBox</code>+<code>QComboBox</code>，PyQt6的插件用上了几个。</p>
+<p>加载文件时，把文件名的后17位，就是开始和结束的时间，加载文件时，直接把这个时间显示在开始和结束<code>QDateEdit</code>里，填表日期就是当天的日期，填表人，通过<code>QComboBox</code>一次都填加上去。</p>
+<p>后面那三个选项主要是为了在生成表头时，要有这三个项的分类，一项、二项还是三项，最后三个选项内容出现在表头名字，中文名之后，日期之前的位置。</p>
+<p>加载时默认表格头显示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">self.table_widget = QTableWidget()</span><br><span class="line">        self.table_widget.setColumnCount(17)</span><br><span class="line">        self.table_widget.setHorizontalHeaderLabels([&#x27;数据日期&#x27;, &#x27;单位&#x27;, &#x27;台站代码&#x27;, &#x27;台站名称&#x27;, &#x27;测点号&#x27;, &#x27;仪器ID&#x27;, &#x27;仪器名称&#x27;, &#x27;测项分量名称&#x27;, &#x27;测项分量代码&#x27;, &#x27;观测日志记录&#x27;, &#x27;预处理质量问题要点描述&#x27;, &#x27;问题时段&#x27;, &#x27;问题解决办法或建议&#x27;, &#x27;问题解决时限&#x27;, &#x27;备  注&#x27;, &#x27;区域中心反馈情况&#x27;, &#x27;确认反馈&#x27;])</span><br></pre></td></tr></table></figure>
+
+<p>生成报告内容主要通过<code>openpyxl</code>一行一行写的，包括行的列的合并，几列合并，字体大小，居中与否，列宽，都是通过代码调用<code>openpyxl</code>来实现的。</p>
+<p>筛选出的结果存在一个pandas的dataframe里，写入时，按行一个一个写入到<code>openpyxl.Workbook()</code>的对象里。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"># 设置字体和对齐方式</span><br><span class="line">       font = Font(size=9)</span><br><span class="line">       bold_font = Font(bold=True,size=9)</span><br><span class="line">       center_alignment = Alignment(horizontal=&#x27;center&#x27;, vertical=&#x27;center&#x27;)</span><br><span class="line"></span><br><span class="line">       # 设置边框</span><br><span class="line">       thin_border = Border(left=Side(style=&#x27;thin&#x27;), </span><br><span class="line">                           right=Side(style=&#x27;thin&#x27;), </span><br><span class="line">                           top=Side(style=&#x27;thin&#x27;), </span><br><span class="line">                           bottom=Side(style=&#x27;thin&#x27;))</span><br><span class="line"></span><br><span class="line">       # 添加头部信息</span><br><span class="line">       ss = f&quot;黑龙江地球物理台网数据质量监控反馈表(&#123;xuanxiang&#125;)&#123;result&#125;&quot;</span><br><span class="line">       headers = [ss]</span><br><span class="line">       ws.append(headers)</span><br><span class="line">       ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=17)</span><br><span class="line">       ws[&#x27;A1&#x27;].font = bold_font</span><br><span class="line">       ws[&#x27;A1&#x27;].alignment = center_alignment</span><br><span class="line"></span><br><span class="line">       date_row = [f&quot;监控数据日期：&#123;result17&#125;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, f&quot;填表日期：&#123;date_string&#125;&quot;, &quot;&quot;, &quot;&quot;, f&quot;填表人：&#123;selected_p&#125;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;]</span><br><span class="line">       ws.append(date_row)</span><br><span class="line">       ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=4)</span><br><span class="line">       ws.merge_cells(start_row=2, start_column=5, end_row=2, end_column=7)</span><br><span class="line">       ws.merge_cells(start_row=2, start_column=8, end_row=2, end_column=11)</span><br><span class="line">       for col in [&#x27;A&#x27;, &#x27;E&#x27;, &#x27;H&#x27;]:</span><br><span class="line">           ws[col+&#x27;2&#x27;].font = bold_font</span><br><span class="line">           ws[col+&#x27;2&#x27;].alignment = center_alignment</span><br><span class="line"></span><br><span class="line">       # 设置列宽</span><br><span class="line">       col_widths = [8.36, 8, 8, 11.09, 6, 11.09, 8, 13, 7, 25, 35, 8.36, 11.09, 11, 8, 15, 8]</span><br><span class="line">       for i, width in enumerate(col_widths):</span><br><span class="line">           col_letter = openpyxl.utils.get_column_letter(i+1)</span><br><span class="line">           ws.column_dimensions[col_letter].width = width</span><br></pre></td></tr></table></figure>
+
+<p>大概就是这样吧！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/12/29/%E5%9F%BA%E4%BA%8E%20Python%20%E7%9A%84%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86%E5%8F%B0%E7%BD%91%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E7%9B%91%E6%8E%A7%E6%97%A5%E6%8A%A5%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E4%B8%8E%E5%8F%8D%E9%A6%88%E7%94%9F%E6%88%90/" data-id="clqqpc7gh000cu8u34vmw9fg6" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/12/29/PyQt6%E4%B9%8B%E9%A1%B5%E9%9D%A2%E5%88%87%E6%8D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/12/29/%E5%9F%BA%E4%BA%8E%20Python%20%E7%9A%84%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86%E5%8F%B0%E7%BD%91%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F%E7%9B%91%E6%8E%A7%E6%97%A5%E6%8A%A5%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86%E4%B8%8E%E5%8F%8D%E9%A6%88%E7%94%9F%E6%88%90/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/29/PyQt6%E4%B9%8B%E9%A1%B5%E9%9D%A2%E5%88%87%E6%8D%A2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/29/PyQt6%E4%B9%8B%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8%E5%92%8C%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/29/PyQt6%E5%B0%8F%E7%A8%8B%E5%BA%8F/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/29/PyQt6%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E9%82%AE%E4%BB%B6%E6%94%B6%E5%8F%96%EF%BC%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9%EF%BC%8C%E8%AF%BB%E5%8F%96%E6%89%B9%E5%AE%9A%E6%96%87%E4%BB%B6/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
